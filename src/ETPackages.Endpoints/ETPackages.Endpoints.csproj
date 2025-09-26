@@ -5,8 +5,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Authors>Emir TARTAR;etartar</Authors>
-		<Description>Simple and performance-oriented library for .NET with support for CQRS, pipeline behaviors, and notifications.</Description>
-		<PackageTags>Mediator;CQRS;MediatR;Pipeline;Notification;RequestHandler;DependencyInjection;Messaging;CleanArchitecture;DotNet;Middleware</PackageTags>
+		<Description>Extension library to simplify .NET 6+ Minimal API endpoints.</Description>
+		<PackageTags>minimal api; .net; extension; endpoints</PackageTags>
 		<PackageIcon>logo_128x128.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IncludeSymbols>true</IncludeSymbols>
