@@ -1,5 +1,10 @@
 ﻿﻿📌 ETPackages.Endpoints
 
+[![Build & Publish](https://github.com/ET-NuGet-Packages/ETPackages.Endpoints/actions/workflows/nuget-publish.yml/badge.svg)](https://github.com/ET-NuGet-Packages/ETPackages.Endpoints/actions)
+[![NuGet Version](https://img.shields.io/nuget/v/ETPackages.Endpoints.svg?logo=nuget)](https://www.nuget.org/packages/ETPackages.Endpoints/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/ETPackages.Endpoints.svg)](https://www.nuget.org/packages/ETPackages.Endpoints/)
+[![Target Frameworks](https://img.shields.io/badge/.NET-6%20%7C%207%20%7C%208%20%7C%209-blue?logo=dotnet)](https://dotnet.microsoft.com/)
+
 **ETPackages.Endpoints** is a lightweight extension library designed to make .NET 6+ Minimal API endpoints more **readable, organized, and reusable**.
 
 ---
@@ -77,6 +82,16 @@ public class UserEndpoints : IEndpoint
 }
 
 ```
+
+---
+
+## ⚡ CI/CD with GitHub Actions
+
+This project includes an automated pipeline for publishing to NuGet:
+
+- Push a new tag (`v1.0.0`, `v1.1.0`, etc.)  
+- GitHub Actions builds and publishes the package automatically  
+- No manual steps needed 🚀  
 
 ---
 
