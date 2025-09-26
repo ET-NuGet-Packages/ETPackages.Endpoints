@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNet60Sample", "samples\WebApiNet60Sample\WebApiNet60Sample.csproj", "{E97F4344-ED96-403C-9B90-C1059004C6FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{76576962-DF40-45CD-9227-C8AB7824950B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETPackages.Endpoints", "src\ETPackages.Endpoints\ETPackages.Endpoints.csproj", "{3DA8A882-C18A-47F9-B401-FEF626AD1C2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{73318CB7-0813-471F-8443-ACF5B87FFCDD}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		logo_128x128.png = logo_128x128.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNet70_Or_Greater_Sample", "samples\WebApiNet70_Or_Greater_Sample\WebApiNet70_Or_Greater_Sample.csproj", "{92312BB5-B481-4635-9277-9BB28D5B4932}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97F4344-ED96-403C-9B90-C1059004C6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97F4344-ED96-403C-9B90-C1059004C6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97F4344-ED96-403C-9B90-C1059004C6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97F4344-ED96-403C-9B90-C1059004C6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA8A882-C18A-47F9-B401-FEF626AD1C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA8A882-C18A-47F9-B401-FEF626AD1C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA8A882-C18A-47F9-B401-FEF626AD1C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA8A882-C18A-47F9-B401-FEF626AD1C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92312BB5-B481-4635-9277-9BB28D5B4932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92312BB5-B481-4635-9277-9BB28D5B4932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92312BB5-B481-4635-9277-9BB28D5B4932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92312BB5-B481-4635-9277-9BB28D5B4932}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E97F4344-ED96-403C-9B90-C1059004C6FE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3DA8A882-C18A-47F9-B401-FEF626AD1C2E} = {76576962-DF40-45CD-9227-C8AB7824950B}
+		{92312BB5-B481-4635-9277-9BB28D5B4932} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51127E90-8A43-46C9-9B29-A01AB11819ED}
+	EndGlobalSection
+EndGlobal
