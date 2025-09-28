@@ -48,8 +48,11 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
       - name: Pack
-        run: dotnet pack --configuration Release -o out
+        run: dotnet pack --configuration Release -f net9.0 -o out
 
       - name: Publish to NuGet
         run: dotnet nuget push "out/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
