@@ -16,6 +16,7 @@
 		<Version>1.0.1</Version>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/ET-NuGet-Packages/ETPackages.Endpoints</RepositoryUrl>
+		<PackageReleaseNotes>- Test codes added</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
