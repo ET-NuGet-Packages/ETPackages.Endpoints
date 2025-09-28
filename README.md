@@ -11,11 +11,27 @@
 
 ## ✨ Features
 - ✅ Minimal API support  
-- ✅ Group and organize endpoint definitions  
-- ✅ Automatic discovery via reflection
+- ✅ Define endpoints in separate classes implementing `IEndpoint`
+- ✅ Auto-discover and map endpoints with `AddEndpoints()` and `MapEndpoints()`
 - ✅ Support for single or multiple assemblies
 - ✅ Cleaner code with extension methods  
+- ✅ Easily testable and extendable
 - ✅ Full Swagger / OpenAPI compatibility
+
+---
+
+## ✨ Why use ETPackages.Endpoints?
+
+- **Cleaner `Program.cs`**  
+  No more huge lists of `app.MapGet(...)` calls.
+- **Separation of concerns**  
+  Each endpoint lives in its own class.
+- **Auto-discovery**  
+  Endpoints are automatically discovered and mapped.
+- **Testability**  
+  Endpoints can be tested independently.
+- **Scalability**  
+  Easy to maintain even in large projects.
 
 ---
 
@@ -85,13 +101,39 @@ public class UserEndpoints : IEndpoint
 
 ---
 
-## ⚡ CI/CD with GitHub Actions
+## 🧪 Running Tests
 
-This project includes an automated pipeline for publishing to NuGet:
+This project includes a dedicated test project located in:
 
-- Push a new tag (`v1.0.0`, `v1.1.0`, etc.)  
-- GitHub Actions builds and publishes the package automatically  
-- No manual steps needed 🚀  
+tests/ETPackages.Endpoints.Tests
+
+### Run all tests
+
+```
+dotnet test
+```
+
+### Run tests with detailed output
+
+```
+dotnet test -v n
+```
+
+### Run a specific test class
+
+```
+dotnet test --filter "FullyQualifiedName~ETPackages.Endpoints.Tests.EndpointTests"
+```
+
+### Notes
+
+- Tests use xUnit + FluentAssertions for better readability.
+- Microsoft.AspNetCore.Mvc.Testing and TestServer are used to run in-memory Minimal API applications.
+- Covered scenarios:
+    - Endpoint discovery (AddEndpoints)
+    - Single & multiple endpoints mapping
+    - Duplicate endpoint conflict
+    - No endpoints case (graceful handling)
 
 ---
 
