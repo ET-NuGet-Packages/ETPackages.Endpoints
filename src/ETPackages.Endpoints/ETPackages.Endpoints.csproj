@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0;net8.0;net7.0;net6.0</TargetFrameworks>
+		<IsPackable>true</IsPackable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -15,7 +16,6 @@
 		<Version>1.0.1</Version>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/ET-NuGet-Packages/ETPackages.Endpoints</RepositoryUrl>
-		<IsPackable>true</IsPackable>
 	</PropertyGroup>
 
 	<ItemGroup>
